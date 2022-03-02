@@ -1,9 +1,4 @@
 
-//var x = document.getElementsByClassName("dropdown-menu")[2];
-//x.style.left = "-100px";
-//alert("fixed");
-//alert(""+window.location.hostname+"\n"+window.location.pathname);
-
 function replace_all_as(){
 //	console.log('inside');
 	var goto_link;
@@ -44,9 +39,7 @@ if(window.location.pathname == "/"){
 			});
 }else if(window.location.pathname == "/login/index.php"){
 	chrome.storage.sync.get(['uname','pass','autologin'], (e)=>{
-			//alert(e.uname + "\n" + e.pass + "\n" + e.autologin+"\n" + (e.autologin == true));
 			if(e.autologin == true){
-			//alert("yes");
 			document.getElementsByName("username")[0].value = e.uname;
 			document.getElementsByName("password")[0].value = e.pass;
 			document.getElementById("loginbtn").click();
