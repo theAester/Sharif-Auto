@@ -5,6 +5,7 @@ it's still being developed so rn it basically has too few features.
  CW sucks soooooo hard that i had to try and patch some of the things that the original programmers shouldve thought of in the first place myself using an extension(which gives me 1/10 of the features those fuckers in the frontend(and backend) team had and is a complete pain in the ass(and is slow as fuck)).
  
 Anyway here it is and I hope yall enjoy it.
+
 ##Features
 * It saves your username and password and automates log ins(since the CW programmers decided its cool to just log you out every hour and redirect you twice in order to get you back on track). Those of you with a wide and impatient ass will love it
 * It replaces that {$a} bullshit with the actual name of the event on the front page(THIS COULD BE FIXED BY THE ORIGINAL DEVELOPERS BY CHANGING A SINGLE QUOTATION TO A DOUBLE QUOTATION IN LIKE 4 LINE!!! but i don't have access to the backend so i have to inject JAVASCRIPT into the page and wait for the WHOLE THING to load TWICE to snatch a single title from the document. Brilliant(and yes it takes ages but its better than a {$a} saying fuck you to your face every time)
