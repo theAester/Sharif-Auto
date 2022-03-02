@@ -1,0 +1,145 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <style media="screen">
+        body{
+          width:400;
+          height:400;
+          margin:0;
+        }
+        .headd{
+          background-color: #7699A7;
+          height:50px;
+          border-bottom:solid black 2px;
+        }
+
+        .switch {
+  position: relative;
+  display: inline-block;
+  width: 42px;
+  height: 18px;
+  top:8px;
+  left:6px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 1px;
+  bottom: 1px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(23px);
+  -ms-transform: translateX(23px);
+  transform: translateX(23px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.container{
+  position:relative;
+  height:350px;
+  width:300px;
+  left:50px;
+  border-left:solid black 2px;
+  border-right:solid black 2px;
+}
+.text{
+  font-size:20px;
+  font-weight:bold;
+}
+.row{
+  margin-top:15px;
+  position:relative;
+  display:flex;
+}
+.inpt{
+  margin-left:5px;
+  width:140px;
+  font-size:19px;
+}
+.butt{
+  box-shadow:none;
+  background-color:#5483C4;
+  color:white;
+  font-size:23px;
+  width:250px;
+  padding:13px;
+  margin-top:10px;
+}
+    </style>
+    <title>Sharif Auto</title>
+    <script src = "functions.js"></script>
+    <script src = "popjs.js">
+
+    </script>
+  </head>
+  <body>
+    <header class="headd">
+      <h1 style="position:relative; margin-left:40px;top:15px;">Sharif Auto</h1>
+    </header>
+    <div class="container">
+      <br />
+      <div class="row" style="padding-left:25px;">
+        <span class="text">Auto login: </span>
+        <label class="switch">
+          <input type="checkbox" id="autologin">
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <div class="row" style="padding-left:25px;">
+        <span class="text">Username: </span>
+        <input type="text" id="uname" class="inpt"/>
+      </div>
+      <div class="row" style="padding-left:25px;">
+        <span class="text">Password: </span>
+        <input type= "password" id="pass" class="inpt"/>
+      </div>
+      <div class="row" style="padding-left:25px;">
+        <button id="button1" class="butt">Create instance</button>
+      </div>
+      <div class="row" style="padding-left:25px;">
+        <button id="button2" class="butt">Fix {$a}</button>
+      </div>
+
+    </div>
+  </body>
+</html>

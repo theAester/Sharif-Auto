@@ -1,0 +1,29 @@
+{
+  "manifest_version" : 2,
+  "name" : "Sharif Auto",
+  "version" : "0.3",
+  "icons" : {
+    "128" : "icon128.png"
+  },
+  "content_scripts" : [
+    {
+      "run_at" : "document_idle",
+      "matches" :[
+        "https://cw.sharif.edu/*"
+      ],
+      "js" : [
+        "functions.js",
+        "content.js"
+     ]
+    }
+  ],
+  "browser_action" : {
+    "default_icon" : "icon128.png",
+    "default_popup" : "pop.html"
+  },
+  "background":{
+    "persistent": false,
+    "scripts" : ["bg.js"]
+  },
+  "permissions" : ["contextMenus","storage","tabs","<all_urls>"]
+}
