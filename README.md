@@ -1,4 +1,4 @@
-# Sharif Auto chrome extension version 0.3(beta)
+# Sharif Auto chrome extension version 0.3(BETA)
 it's still being developed so rn it basically has too few features.
 
 ## Description:
