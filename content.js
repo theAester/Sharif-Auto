@@ -23,6 +23,25 @@ function replace_all_as(){
 		}
 		xframe.src= goto_link;
 	}
+	// near events section
+	/*elems = document.querySelectorAll('[data-type=event]');
+	for(var i =0; i<elems.length;i++){
+		var xframe = document.createElement('iframe');
+		xframe.style.display="none";
+		xframe.setAttribute('data-index', i);
+		document.body.appendChild(xframe);
+		var elem = elems[i];
+		goto_link = elem.href;
+		xframe.onload = function(){
+			var ind = this.getAttribute('data-index')*1;
+			var myelem = document.querySelectorAll('[data-type=event]')[ind];
+			var txt= this.contentDocument.getElementById('maincontent').parentElement.children[1].innerHTML;
+			myelem.innerHTML = txt;
+			this.remove();
+		}
+		xframe.src= goto_link;
+	}*/
+
 }
 function wait_for_it(){
 	if(!document.querySelector('[data-region=event-list-loading-placeholder]').classList.contains('hidden')){
@@ -30,7 +49,7 @@ function wait_for_it(){
 		setTimeout(wait_for_it,200);
 		return;
 	}
-	setTimeout(replace_all_as, 200);
+	setTimeout(replace_all_as, 70);
 }
 if(window.location.pathname == "/"){
 	chrome.storage.sync.get('autologin', (e)=>{

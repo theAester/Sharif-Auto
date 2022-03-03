@@ -21,12 +21,6 @@ document.addEventListener('DOMContentLoaded',function(){
   }
   document.getElementById("button1").onclick = function(){
     chrome.tabs.create( {"url" : "https://cw.sharif.edu"} );
-    // chrome.storage.sync.get(['uname','pass','autologin'],(e) => {
-    //   alert(e.uname + "\n" + e.pass + "\n" + e.autologin);
-    // });
-  }
-  document.getElementById("button2").onclick = function(){
-	chrome.tabs.executeScript({ file : 'content.js'});
   }
 });
 
