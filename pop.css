@@ -1,0 +1,56 @@
+/* 
+	POP UP PAGE STYLESHEET
+	DONT CHANGE THE LINES MARKED WITH "DONT CHANGE" UNLESS YOU REALLY KNOW WHAT YOURE DOING
+	YOU CAN CHANGE THE REST OF THE LINES OR ADD SOME MORE TO CUSTOMIZE THE APPEARANE
+*/
+
+body{
+	width:400; /* Dont Change */ 
+	height:300; /* Dont Change */
+	margin:0; /* Dont Change */
+	background-color: black;
+	color: white;
+}
+.headd{
+	background-color: #7699A7;
+	height:50px; /* Dont Change */
+	border-bottom:solid black 2px;
+}
+.container{
+	position:relative; /* Dont Change */
+	height:250px; /* Dont Change */
+	width:300px; /* Dont Change */
+	left:50px; /* Dont Change */
+	border-left:solid grey 2px;
+	border-right:solid grey 2px;
+}
+.text{
+	font-size:20px;
+	font-weight:bold;
+}
+.row{
+	margin-top:15px;
+	position:relative; /* Dont Change */
+	display:flex; /* Dont Change */
+}
+.inpt{
+	margin-left:5px;
+	width:140px;
+	font-size:19px;
+}
+.butt{
+	box-shadow:none;
+	background-color:#5483C4;
+	color:white;
+      	font-size:23px;
+	width:250px;
+	padding:13px;
+	margin-top:10px;
+	border-radius: 20px;
+	border:none;
+	transition: box-shadow 0.2s cubic-bezier(0.01, 1.03, 0.69, 1.03) ;
+}
+.butt:hover{
+	box-shadow: 1px 1px 5px 5px grey;
+}
+
