@@ -1,5 +1,5 @@
 # Sharif Auto chrome extension version 0.3(BETA)
-it's still being developed so rn it basically has too few features.
+It's still being developed so rn it basically has too few features.
 
 ## Description:
  CW sucks soooooo hard that i had to try and patch some of the things that the original programmers shouldve thought of in the first place myself using an extension(which gives me 1/10 of the features those fuckers in the frontend(and backend) team had and is a complete pain in the ass(and is slow as fuck)).
