@@ -8,7 +8,7 @@ Anyway here it is and I hope yall enjoy it.
 
 ## Features
 * It saves your username and password and automates log ins(since the CW programmers decided its cool to just log you out every hour and redirect you twice in order to get you back on track). Those of you with a wide and impatient ass will love it
-* It replaces that {$a} bullshit with the actual name of the event on the front page(THIS COULD BE FIXED BY THE ORIGINAL DEVELOPERS BY CHANGING A SINGLE QUOTATION TO A DOUBLE QUOTATION IN LIKE 4 LINE!!! but i don't have access to the backend so i have to inject JAVASCRIPT into the page and wait for the WHOLE THING to load TWICE to snatch a single title from the document. Brilliant(and yes it takes ages but its better than a {$a} saying fuck you to your face every time)
+* It replaces that {$a} bullshit with the actual name of the event on the front page(THIS COULD BE FIXED BY THE ORIGINAL DEVELOPERS BY CHANGING A SINGLE QUOTATION TO A DOUBLE QUOTATION IN LIKE 4 LINES OF CODE!!! but i don't have access to the backend so i have to inject JAVASCRIPT into the page and wait for the WHOLE THING to load TWICE to snatch a single title from the document. Brilliant(and yes it takes ages but its better than a {$a} saying fuck you to your face every time)
 ## Notes
 Forking and improving the extension is encouraged(and somewhat neccessary given that i have a fat fucking ass and no taste) so hit me up and i may even add you as a contributor.
 
