@@ -64,6 +64,6 @@ if(window.location.pathname == "/"){
 			document.getElementById("loginbtn").click();
 			}
 			});
-}else if(window.location.pathname == '/my/' || window.location.pathname == '/my/index.php'){
+}else if(window.location.pathname.startsWith('/my/')){
 	wait_for_it();
 }
