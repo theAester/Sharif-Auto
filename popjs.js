@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded',function(){
-  chrome.storage.sync.get(['uname','pass','autologin'] , (e) => {
+  chrome.storage.sync.get(['uname','pass','autologin','darkmode'] , (e) => {
     if(e.uname){
         document.getElementById("uname").value = e.uname;
     }
@@ -9,9 +9,15 @@ document.addEventListener('DOMContentLoaded',function(){
     if(e.autologin){
       document.getElementById("autologin").checked = e.autologin;
     }
+    if(e.darkmode){
+      document.getElementById("darkmode").checked = e.darkmode;
+    }
   });
   document.getElementById("autologin").onchange = function(){
     chrome.storage.sync.set ( {'autologin' : document.getElementById("autologin").checked} );
+  }
+  document.getElementById("darkmode").onchange = function(){
+    chrome.storage.sync.set ( {'darkmode' : document.getElementById("darkmode").checked} );
   }
   document.getElementById("uname").onchange = function(){
     chrome.storage.sync.set( {"uname" : document.getElementById("uname").value } );

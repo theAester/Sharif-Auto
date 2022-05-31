@@ -51,6 +51,37 @@ function wait_for_it(){
 	}
 	setTimeout(replace_all_as, 70);
 }
+function darkmode_recursive(X,level,d,cutoff){
+    var P = X.children;
+    var newd = d;
+    if(level<=cutoff) d += (level%2 ? 6 : -2);
+    for(var i=0;i<P.length;i++){
+        darkmode_recursive(P[i],level+1,newd,cutoff);
+    }
+    s = d.toString(16);
+    X.style.backgroundColor = "#"+d+d+d;
+    if(X.classList.contains("earlysubmission") || X.classList.contains("latesubmission")) X.style.backgroundColor = "#43A055";
+    X.style.color = "white";
+}
+
+function apply_darkmode(){
+    var N = document.querySelector("nav");
+    var D = document.querySelector(".drawer");
+    var P = document.querySelector("#page");
+    var F = document.querySelector("footer");
+
+    darkmode_recursive(N,0,40,0);
+    darkmode_recursive(D,0,40,6);
+    darkmode_recursive(P,0,40,5);
+    darkmode_recursive(F,0,40,1);
+
+    //css injection
+
+    var X = document.createElement("style");
+    X.innerHTML = ".list-group-item{ background-color:#444; color:white; }";
+    document.head.appendChild(X);
+}
+
 if(window.location.pathname == "/"){
 	chrome.storage.sync.get('autologin', (e)=>{
 			if(e.autologin == true)
@@ -67,3 +98,10 @@ if(window.location.pathname == "/"){
 }else if(window.location.pathname.startsWith('/my/')){
 	wait_for_it();
 }
+chrome.storage.sync.get('darkmode', (e)=>{
+	if(e.darkmode){
+		if(e.darkmode == true){
+			apply_darkmode();
+		}
+	}
+});

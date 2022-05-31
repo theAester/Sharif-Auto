@@ -6,7 +6,7 @@
 
 body{
 	width:400; /* Dont Change */ 
-	height:300; /* Dont Change */
+	height:340; /* Dont Change */
 	margin:0; /* Dont Change */
 	background-color: black;
 	color: white;
@@ -18,7 +18,7 @@ body{
 }
 .container{
 	position:relative; /* Dont Change */
-	height:250px; /* Dont Change */
+	height:290px; /* Dont Change */
 	width:300px; /* Dont Change */
 	left:50px; /* Dont Change */
 	border-left:solid grey 2px;
@@ -52,5 +52,22 @@ body{
 }
 .butt:hover{
 	box-shadow: 1px 1px 5px 5px grey;
+}
+.c-new{
+	margin-left:24px;
+	text-decoration:underline;
+}
+.c-new::before{
+	content:"NEW!";
+	font-size:0.5em;
+	width:35px;
+	height:35px;
+	position:absolute;
+	top:-11px;
+	left:6px;
+	background-color:#3464C2;
+	border-radius:50%;
+	text-align:center;
+	line-height:35px;
 }
 
